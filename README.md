@@ -270,6 +270,75 @@ Some will argue that the following skills and topics shouldn't be optional and a
 - [ ] Cluster Policy Management
   - [ ] Networking Policies
   - [ ] Storage Policies
+🔐 Security & Compliance
+
+Secret rotation policies – ensure IAM keys, API tokens, and DB credentials rotate automatically.
+
+Compliance considerations – HIPAA, PCI, FedRAMP, SOC2, GDPR depending on your org.
+
+Audit logging – logs for infra, deployments, changes, and access must be immutable and centralized.
+
+Vulnerability management – dependency scanning (Snyk, Trivy), image scanning, patching cadence.
+
+📊 Observability & Reliability
+
+SLI/SLO Error budgets – tracked and visible (burn rate alerts).
+
+End-to-end tracing – with OpenTelemetry/Jaeger/Zipkin.
+
+Log aggregation – ELK, Loki, or Splunk pipelines with retention & compliance checks.
+
+Synthetic monitoring – simulate user traffic to detect regressions early.
+
+GameDays/Drills – run SEV2/SEV3 simulations with blameless postmortems.
+
+🛡️ Resilience & Recovery
+
+Disaster Recovery – runbooks for region outage, RPO/RTO targets defined.
+
+Backups & Restore Testing – periodic restore drills for DBs, clusters, and state.
+
+Failover Strategy – multi-region DNS (Route53, Cloudflare), load balancer failovers.
+
+⚙️ Platform Engineering / Developer Experience
+
+Golden paths & templates – reusable Terraform/K8s/Helm templates for dev teams.
+
+Internal platform docs – onboarding guides, troubleshooting playbooks.
+
+Self-service tooling – portals or CLIs for teams to request infra, secrets, monitoring.
+
+Standardized pipelines – enforce CI/CD guardrails (lint, tests, cost checks, security scans).
+
+🚨 Incident Management & Operations
+
+On-call rotation health – fairness, escalation policies, burnout prevention.
+
+Runbooks – per-service actionable guides.
+
+Error budget policies – freeze deployments when reliability targets breached.
+
+Incident review maturity – blameless RCA, action items tracked to completion.
+
+💰 Cost & Efficiency
+
+Cost monitoring – dashboards by service/team.
+
+Resource right-sizing – periodic review of requests/limits.
+
+Auto-scaling policies – scale down in low-traffic hours.
+
+FinOps practices – tagging for cost attribution.
+
+🤝 Culture & Continuous Improvement
+
+SRE/Dev partnership – clarify “who owns what” (infra vs. performance vs. SLIs).
+
+Learning culture – share postmortems, tech talks, brown-bags.
+
+Maturity model tracking – where is the team on ops → automation → product journey?
+
+Tool adoption criteria – avoid tool sprawl, document why a tool was chosen.
 
 #### Scaling
 - Cluster Scaling
